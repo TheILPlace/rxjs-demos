@@ -1,0 +1,12 @@
+<div class="myh2">{{title}}</div>
+<h3>{{freeText}}</h3>
+<div class="terminal">
+    
+    <div class="mydiv">
+        <pre *ngFor="let item of result">{{item}}</pre>
+    </div>
+    
+</div>
+<div *ngIf="buttonTitle !== ''">
+<button (click)="buttonClick()" class="button" [ngClass]="getButtonClass()">{{buttonTitle}}</button>
+</div>
